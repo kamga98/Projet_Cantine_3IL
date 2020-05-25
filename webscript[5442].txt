@@ -1,0 +1,38 @@
+<?= $tic['id_ticket'] ?> - <?= $tic['messag'] ?> - <?= $tic['etat'] ?> - <?= $tic['reponse'] ?> - 
+     <?= $tic['dateouvert'] ?> -  <?= $tic['dateferm'] ?> -  <?= $tic['id_client'] ?> <a
+                href="supprimerticket.php?id_ticket=<?= $tic['id_ticket'] ?>">Supprimer</a>
+
+
+ <!-- Email input-->
+                    <div class="form-group">
+                      <label class="col-md-3 control-label" for="email"> <h5>E-mail</h5></label>
+                      <div class="col-md-9">
+                        <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+                      </div>
+                    </div>
+
+
+ <div class="form-group">
+                      <label class="col-md-3 control-label text-align:left color:blue" for="name"> <h5>Nom d'utilisateur</h5> </label>
+                      <div class="col-md-9">
+                        <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+                      </div>
+                    </div>
+
+
+
+ <div class="form-group">
+                            <label class="col-md-3 control-label" for="subject">
+                                <h5>Sujet</h5></label>
+                            <div class="col-md-9">
+                            <select id="sujet" name="sujet" class="form-control" required="required">
+                                <option value="na" selected="">Choisissez</option>
+                                <option value="service">Incidents</option>
+                                <option value="suggestions">Suggestions</option>
+                                <option value="product">Autres</option>
+                            </select>
+                            </div>
+                        </div> 
+
+
+
